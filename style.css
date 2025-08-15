@@ -343,6 +343,43 @@ img.header-bg {
 .swiper-pagination-bullet-active{
     background-color: var(--text-dark);
 }
+
+.footer{
+    background-color: var(--text-dark);
+}
+
+.footer__container img{
+    margin-bottom: 2rem;
+    max-width: 225px;
+    margin-inline: auto;
+}
+
+.footer__socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.footer__socials a{
+    padding: 2px 7px;
+    font-size: 1.5rem;
+    color: var(--text-dark);
+    background-color: var(--text-light);
+    border-radius: 100%;
+}
+.footer__socials a:hover{
+    color: var(--white);
+    background-color: var(--text-light);
+}
+.footer__bar{
+    padding: 1rem;
+    font-size: .9rem;
+    color: var(--text-light);
+    text-align: center;
+
+}
 @media (width > 768px) {
     nav {
         position: static;
