@@ -13,3 +13,38 @@ navLinks.addEventListener('click', (e) => {
     navLinks.classList.remove("open");
     menuBtnIcon.setAttribute("class", "ri-menu-line");
 });
+
+const scrollReavealOption = {
+    distance: "50px",
+    origin: "bottom",
+    duration: 1000,
+};
+
+ScrollReveal().reveal(".header__image img", {
+    ...scrollReavealOption,
+    origin: "right",
+});
+
+ScrollReveal().reveal(".header__content h1", {
+    ...scrollReavealOption,
+    delay: 500,
+});
+
+ScrollReveal().reveal(".header__content p", {
+    ...scrollReavealOption,
+    delay: 1000,
+});
+ScrollReveal().reveal(".header__image__content", {
+    duration: 1000,
+    delay: 1500,
+});
+
+ScrollReveal().reveal(".product__image img", {
+    ...scrollReavealOption,
+    origin: "left",
+});
+ScrollReveal().reveal(".product__card", {
+    ...scrollReavealOption,
+    delay:500,
+    interval: 500,
+});
