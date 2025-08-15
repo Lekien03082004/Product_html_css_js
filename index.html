@@ -9,6 +9,11 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
+    <!-- Lin de code vuot san pham -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <nav>
@@ -83,6 +88,75 @@
         <div class="product__btn"><button class="btn">Add to cart</button></div>
       </div>
     </section>
+
+    <section class="section__container store__container" id="store">
+      <h2>JBL beats design</h2>
+      <p>
+        Explore our JBL Beats Design collection, where style meets superior
+        audio performance.
+      </p>
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="store__card">
+              <h4>Model no- 00035</h4>
+              <img src="assets/store-1.png" alt="store" />
+              <h3>Price- $120</h3>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="store__card">
+              <h4>Model no- 00045</h4>
+              <img src="assets/store-2.png" alt="store" />
+              <h3>Price- $130</h3>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="store__card">
+              <h4>Model no- 00015</h4>
+              <img src="assets/store-3.png" alt="store" />
+              <h3>Price- $110</h3>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="store__card">
+              <h4>Model no- 00055</h4>
+              <img src="assets/store-4.png" alt="store" />
+              <h3>Price- $140</h3>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="store__card">
+              <h4>Model no- 00065</h4>
+              <img src="assets/store-5.png" alt="store" />
+              <h3>Price- $120</h3>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="store__card">
+              <h4>Model no- 00075</h4>
+              <img src="assets/store-6.png" alt="store" />
+              <h3>Price- $120</h3>
+            </div>
+          </div>
+          ...
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Hai nut chuyen product -->
+        <!-- If we need navigation buttons -->
+        <!-- <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div> -->
+
+        <!-- If we need scrollbar -->
+        <!-- <div class="swiper-scrollbar"></div> -->
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="main.js"></script>
   </body>

@@ -6,7 +6,7 @@ menuBtn.addEventListener('click', (e) => {
     navLinks.classList.toggle("open");
 
     const isOpen = navLinks.classList.contains("open");
-    menuBtnIcon.setAttribute("class", isOpen ? "ri-close-line": "ri-menu-line");
+    menuBtnIcon.setAttribute("class", isOpen ? "ri-close-line" : "ri-menu-line");
 });
 
 navLinks.addEventListener('click', (e) => {
@@ -45,6 +45,33 @@ ScrollReveal().reveal(".product__image img", {
 });
 ScrollReveal().reveal(".product__card", {
     ...scrollReavealOption,
-    delay:500,
+    delay: 500,
     interval: 500,
 });
+
+
+const swiper = new Swiper(".swiper", {
+    loop: true,
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    coverflowEffect: {
+        rotate: 0,
+        depth: 250,
+        modifier: 1,
+        scale: .75,
+        slideShadows: false,
+        stretch: -100,
+    },
+
+    pagination: {
+        el: ".swiper-pagination",
+    },
+    // Navigation arrows
+    // navigation: {
+    //     nextEl: '.swiper-button-next',
+    //     prevEl: '.swiper-button-prev',
+    // },
+    
+})
